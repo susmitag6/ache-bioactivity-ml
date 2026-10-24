@@ -1,0 +1,29 @@
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+*~
+
+# Temporary README backups
+README_backup_*.md
+README_before_*.md
+
+# Temporary files
+*.tmp
+*.log
+
+# Keep draft reports local
+/reports/*
+!/reports/.gitkeep

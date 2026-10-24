@@ -1,0 +1,4 @@
+model,representation,validation_mae,validation_rmse,validation_r2,test_mae,test_rmse,test_r2,test_evaluated
+Random Forest,"Morgan count fingerprint, radius 2, 2048 features",0.661,0.907,0.626,0.565433,0.815533,0.696993,True
+Tanimoto-SVR,"Morgan binary fingerprint, radius 2, 2048 bits",0.651,0.889,0.642,0.547969,0.788877,0.716477,True
+4-layer GINE,"2D molecular graph, 34 atom and 7 bond features",0.812569,1.057631,0.492385,,,,False
