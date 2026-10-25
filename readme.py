@@ -56,11 +56,29 @@ These results highlight an important point in molecular machine learning: good a
 
 ### Further Results
 
+#### Signed Errors Across Activity Ranges
+
+![Signed prediction error by experimental activity quartile](results/figures/figure_02_signed_error_by_activity_quartile.png)
+
+**Figure 2.** Signed prediction errors grouped by experimental pIC50 quartile. This analysis helps reveal systematic bias across activity ranges, complementing Figure 1: the fingerprint-based models tended to overpredict lower-activity compounds and underpredict higher-activity compounds. The direction of a signed error depends on the plotting convention used in the analysis.
+
+#### Residual Distributions
+
+![Residual distributions for the fingerprint-based models](results/figures/figure_03_residual_distributions.png)
+
+**Figure 3.** Distributions of prediction residuals for the fingerprint-based models. Examining the spread and tails of the residuals complements the aggregate MAE and RMSE values and helps assess whether typical errors obscure less frequent, larger prediction errors.
+
 #### Applicability Domain
 
 ![Applicability domain and prediction error](results/figures/figure_04_applicability_domain_mae.png)
 
 **Figure 4.** Random Forest prediction error on the full held-out test set and on selected subsets of molecules. The validation-defined applicability domain reduced MAE from 0.565 to 0.396 while retaining 636 of 1,256 molecules. A retrospective uncertainty-only selection achieved an MAE of 0.376 at the same coverage. This comparison illustrates the trade-off between prediction accuracy and the number of molecules for which predictions are retained.
+
+#### Molecular Similarity and Prediction Error
+
+![Molecular similarity to training data versus prediction error](results/figures/figure_05_similarity_vs_error.png)
+
+**Figure 5.** Relationship between molecular similarity to the training data and prediction error. Molecules with lower similarity were generally harder to predict, but similarity alone did not determine the size of an individual prediction error. This motivates evaluating reliability across chemical space rather than relying only on a single overall accuracy score.
 
 #### Generalization to New Molecular Scaffolds
 
